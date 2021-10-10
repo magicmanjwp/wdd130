@@ -1,0 +1,47 @@
+body {
+  background-color: #17bebb;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #c81d25;
+}
+p {
+  color: #084887;
+}
+
+header,
+footer {
+  background-color: #9ba2ff;
+  border: 1px solid #084887;
+  padding: 0.5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+header {
+    grid-template-columns: 200px 1fr;
+}
+footer{
+    grid-template-columns: 1fr 200px;
+}
+
+main {
+  margin: 1rem auto;
+}
+
+/* Class Selector */
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
