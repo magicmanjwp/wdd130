@@ -1,25 +1,27 @@
 body {
-  background-color: #17bebb;
+  background-color: #92f2f0;
   font-size: 16px;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
-  color: #c81d25;
+  color: #c41c24;
   font-family: "Amaranth", sans-serif;
 }
 h1 {
   font-size: 2rem;
+  text-align: center;
 }
 h2,
 h3 {
   font-size: 1.5rem;
 }
 p {
-  color: #084887;
+  color: #073d74;
   font-family: "Actor", sans-serif;
   font-size: 1rem;
   line-height: 2rem;
@@ -27,8 +29,8 @@ p {
 
 header,
 footer {
-  background-color: #9ba2ff;
-  border: 1px solid #084887;
+  background-color: #adb3ff;
+  border: 1px solid #073d74;
   padding: 0.5rem;
   display: grid;
   align-items: center;
@@ -36,6 +38,8 @@ footer {
 }
 header {
   grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-content: center;
 }
 footer {
   grid-template-columns: 1fr 200px;
@@ -57,12 +61,53 @@ main {
   height: auto;
 }
 
+.subject1 {
+  display: grid;
+  grid-template-areas:
+    "a c c"
+    "b c c";
+  padding: 1rem;
+}
+.subject1 h2 {
+  grid-area: a;
+}
+.subject1 p {
+  grid-area: b;
+}
 .subject1 img {
   box-shadow: -5px 6px 1em;
+  grid-area: c;
+  margin-left: 1rem;
 }
 
+.subject2 {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "a a c";
+  padding: 1rem;
+}
+.subject2 h2 {
+  grid-area: b;
+  text-align: right;
+}
+.subject2 p {
+  grid-area: c;
+  text-align: right;
+}
 .subject2 img {
   box-shadow: 5px 6px 1em;
+  grid-area: a;
+  margin-right: 1rem;
+}
+
+.subject3,
+h2 {
+  text-align: center;
+}
+.subject3,
+p {
+  text-align: center;
 }
 
 .mainnav {
@@ -83,12 +128,49 @@ main {
   text-decoration: none;
   display: block;
   padding: 1rem;
-  background-color: #084887;
-  color: #17bebb;
-  border: 1px solid #c81d25;
+  background-color: #073d74;
+  color: #92f2f0;
+  border: 1px solid #c41c24;
 }
 
 .mainnav a:hover {
-  color: #c81d25;
-  background-color: #17bebb;
+  color: #c41c24;
+  background-color: #92f2f0;
+}
+
+.heroimage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.reserve a {
+  text-decoration: none;
+  background-color: #073d74;
+  border: 1px solid #adb3ff;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 45px;
+  right: 200px;
+}
+.reserve h3, p{
+  color: #92f2f0;
+}
+.reserve h3{
+  font-size: 25px;
+}
+.reserve p{
+  font-size: 20px;
+}
+.reserve a:hover{
+  color: #92f2f0;
+  background-color: #c41c24;
+}
+
+
+.info p{
+  text-align: left;
+  color: #073d74;
 }
