@@ -16,6 +16,7 @@ h1 {
   font-size: 2rem;
   text-align: center;
 }
+
 h2,
 h3 {
   font-size: 1.5rem;
@@ -144,7 +145,6 @@ p {
   height: auto;
 }
 
-
 .reserve a {
   text-decoration: none;
   background-color: #073d74;
@@ -155,22 +155,22 @@ p {
   top: 45px;
   right: 200px;
 }
-.reserve h3, p{
+.reserve h3,
+p {
   color: #92f2f0;
 }
-.reserve h3{
+.reserve h3 {
   font-size: 25px;
 }
-.reserve p{
+.reserve p {
   font-size: 20px;
 }
-.reserve a:hover{
+.reserve a:hover {
   color: #92f2f0;
   background-color: #c41c24;
 }
 
-
-.info p{
+.info p {
   text-align: left;
   color: #073d74;
 }
