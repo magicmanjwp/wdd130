@@ -74,6 +74,7 @@ main {
 }
 .subject1 p {
   grid-area: b;
+  color: #073d74;
 }
 .subject1 img {
   box-shadow: -5px 6px 1em;
@@ -95,6 +96,7 @@ main {
 .subject2 p {
   grid-area: c;
   text-align: right;
+  color: #073d74;
 }
 .subject2 img {
   box-shadow: 5px 6px 1em;
@@ -102,19 +104,17 @@ main {
   margin-right: 1rem;
 }
 
-.subject3,
-h2 {
+.subject3 h2 {
   text-align: center;
 }
-.subject3,
-p {
+.subject3 p {
   text-align: center;
+  color: #073d74;
 }
 
 .mainnav {
   list-style-type: none;
   display: flex;
-  width: 400px;
   margin: 0;
   padding: 0;
   text-align: center;
