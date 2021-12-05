@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(to right, #7e99af, #f5e7e7);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Actor", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.mediacard {
+  align-content: center;
+  width: 400px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: -10px 10px 15px;
+}
+
+.text {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.temple {
+  width: 400px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.heart {
+  width: 40px;
+  position: absolute;
+  right: 520px;
+  margin-top: 15px;
+  margin-right: 0;
+  transition: width 1s;
+}
+.heart:hover {
+  width: 50px;
+}
+
+.mediacard footer {
+  padding: 10px;
+  font-size: 14px;
+  font-variant: small-caps slashed-zero;
+  display: inline;
+  display: grid;
+  grid-template-areas: "a b";
+}
+
+footer p {
+  grid-area: a;
+}
+.churchlink {
+  grid-area: b;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: black;
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: color .5s, background-color .5s;
+}
+
+.churchlink:hover {
+    background-color: black;
+  color: white;
+}
