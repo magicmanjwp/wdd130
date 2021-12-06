@@ -59,7 +59,7 @@ main {
     margin: 0 auto;
   }
 
-.list {
+.mainnav {
     list-style-type: none;
   display: flex;
   margin: 0;
@@ -67,7 +67,7 @@ main {
   text-align: center;
 }
 
-.list li {
+.mainnav li {
     flex: 1 1 auto;
 }
 
