@@ -1,9 +1,9 @@
 body {
-    background-color: #03cea4;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  background-color: #03cea4;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -22,12 +22,12 @@ h3 {
   font-size: 1.5rem;
 }
 h4 {
-    text-align: center;
+  text-align: center;
 }
 p {
-  color: #000000;
   font-size: 1rem;
   line-height: 2rem;
+  text-align: center;
 }
 
 header,
@@ -47,20 +47,105 @@ header {
 footer {
   grid-template-columns: 1fr 200px;
 }
-
+footer p {
+  text-align: left;
+}
 main {
   margin: 1rem auto;
 }
 
+
 /* Class Selector */
 
+/*Home*/
+.subject2 a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.subject2 a:hover {
+  border: 1px solid #000;
+}
+
+/* Game Type */
+.subject1-2 a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.subject1-2 a:hover {
+  border: 1px solid #000;
+}
+
+.subject2-2 a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.subject2-2 a:hover {
+  border: 1px solid #000;
+}
+
+.subject3-2 a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.subject3-2 a:hover {
+  border: 1px solid #000;
+}
+
+.subject4-2 a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.subject4-2 a:hover {
+  border: 1px solid #000;
+}
+
+/* How to Play */
+.howtoplay {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d e";
+}
+.heroimage {
+  grid-area: a;
+}
+.subject1-3 {
+  grid-area: b;
+  padding: 10px;
+}
+.subject2-3 {
+  grid-area: e;
+  padding: 10px;
+  margin-left: 6rem;
+}
+.subject3-3 {
+  grid-area: d;
+  padding: 10px;
+}
+.subject4-3 {
+  grid-area: c;
+  padding: 10px;
+  margin-left: 6rem;
+}
+p.shop {
+  color: #bb0000;
+}
+.shop a {
+  text-decoration: none;
+  color: #bb0000;  
+}
+.shop a:hover {
+  border: 1px solid #000;
+}
+
 .page {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 .mainnav {
-    list-style-type: none;
+  list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -68,20 +153,119 @@ main {
 }
 
 .mainnav li {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .wireframe_home {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 .wireframe_type {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 .wireframe_rules {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
+}
+
+/* Media Card */
+
+.mediacard {
+  align-content: center;
+  width: 400px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  transition: box-shadow 0.5s;
+  position: relative;
+}
+.mediacard:hover {
+  box-shadow: -10px 10px 15px;
+}
+
+.text {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cardimage {
+  width: 400px;
+  border-radius: 20px 20px 0 0;
+}
+
+.heart {
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  margin-top: 15px;
+  margin-right: 0;
+  transition: width 1s;
+}
+.heart:hover {
+  width: 50px;
+}
+.ruleslink {
+  grid-area: b;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  color: #bb0000;
+  display: block;
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  transition: color 0.5s, background-color 0.5s;
+}
+.ruleslink:hover {
+  background-color: #ff0101;
+  color: #f5f5f5;
+}
+
+/* Form */
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding: 2rem;
+  border: 2px solid #073d74;
+  border-radius: 1em;
+  background-color: #adb3ff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+form li + li {
+  margin-top: 1em;
+}
+label {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #073d74;
+}
+input:focus,
+textarea:focus {
+  border-color: #ccc;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
 }

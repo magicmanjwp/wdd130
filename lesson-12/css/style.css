@@ -8,6 +8,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+main {
+  position: relative;
+}
+
+
 .mediacard {
   align-content: center;
   width: 400px;
@@ -24,22 +29,17 @@ body {
 
 .image {
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .temple {
   width: 400px;
   border-radius: 20px 20px 0 0;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .heart {
   width: 40px;
   position: absolute;
-  right: 520px;
+  right: 20px;
   margin-top: 15px;
   margin-right: 0;
   transition: width 1s;
