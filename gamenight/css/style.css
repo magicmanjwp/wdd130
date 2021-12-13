@@ -156,6 +156,19 @@ p.shop {
   flex: 1 1 auto;
 }
 
+.mainnav a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  background-color: #073d74;
+  color: #03cea4;
+  border: 1px solid #bb0000;
+}
+.mainnav a:hover {
+  color: #bb0000;
+  background-color: #03cea4;
+}
+
 .wireframe_home {
   width: 300px;
   height: auto;
